@@ -1,24 +1,61 @@
-#Contenedor
+
+body
 {
     width: 100vw;
-    height: 100vh;
-    background-color: bisque;
-    display: flex;
+    height: 95vh;
+    margin: 0;
 }
 
-#Estante
+
+#Nombre
+{
+    color: rgb(223, 26, 26);
+    background-color: #33ff61;
+    text-align: center;
+}
+
+#Contenedor
+{
+    width: 100%;
+    height: 95%;
+    background-color: bisque;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+}
+
+#Estanteria
 {
     background-color: aqua;
+    width: 50%;
+    height: 90%;
 }
 
 #Compra
 {
     background-color: rebeccapurple;
     height: 40%;
+    width: 40%;
 }
 
 .Fondo
 {
-    width: 20%;
-    height: 100%;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-evenly;
+}
+
+.Productos
+{
+    width: 35%;
+    height: 35%;
+}
+.Estante
+{
+    background-color: #b233ff;
+    height: 16%;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-evenly;
 }
