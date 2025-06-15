@@ -36,6 +36,8 @@ body
     background-color: rebeccapurple;
     height: 40%;
     width: 40%;
+    display: flex;
+    flex-direction: column;
 }
 
 .Fondo
@@ -47,15 +49,24 @@ body
 
 .Productos
 {
-    width: 35%;
-    height: 35%;
+    width: 33%;
+    height: 75%;
 }
+
+.Precios
+{
+    display: inline-block;
+    width: 33%;
+    height: 13%;
+    background-color: #3399ff;
+}
+
 .Estante
 {
     background-color: #b233ff;
     height: 16%;
     width: 80%;
     display: flex;
-    flex-wrap: wrap-reverse;
+    flex-wrap: wrap;
     justify-content: space-evenly;
 }
