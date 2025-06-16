@@ -6,7 +6,6 @@ body
     margin: 0;
 }
 
-
 #Nombre
 {
     color: rgb(223, 26, 26);
@@ -40,6 +39,14 @@ body
     flex-direction: column;
     position: relative;
     bottom: 10%;
+}
+
+#Total
+{
+    color: #FFFFFF;
+    font-family: Arial;
+   align-self: last baseline;
+   position: fixed;
 }
 
 .Fondo
