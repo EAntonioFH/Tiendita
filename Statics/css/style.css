@@ -38,6 +38,8 @@ body
     width: 40%;
     display: flex;
     flex-direction: column;
+    position: relative;
+    bottom: 10%;
 }
 
 .Fondo

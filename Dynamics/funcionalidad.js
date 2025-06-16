@@ -1,6 +1,7 @@
 let productos = document.getElementsByClassName("Productos");
 let Precios = document.getElementsByClassName("Precios");
 let compras = document.getElementById("Compra");
+let cantidad = [0,0,0,0,0,0,0,0,0];
 
 for(let i in productos)
 {
@@ -9,11 +10,22 @@ for(let i in productos)
     {
         productos.item(i).addEventListener("click",()=>
         {
-            let compra = document.createElement("p");
-            compra.style.display = "inlineblock";
-            compra.style.color = "#FFFFFF";
-            compra.textContent = productos.item(i).getAttribute("alt") + " :  " + Precios.item(i).textContent;
-            compras.appendChild(compra);
+            let compra;
+            let nomProducto = productos.item(i).getAttribute("alt");
+            
+            if(!(compra = document.getElementById(nomProducto)))
+            {
+                compra = document.createElement("p");
+                compra.style.display = "inlineblock";
+                compra.style.color = "#FFFFFF";
+                compra.id = nomProducto
+                compras.appendChild(compra);
+            }
+
+            cantidad[i]++;
+
+            compra.textContent = nomProducto + " :  " + Precios.item(i).textContent + "    X"  + cantidad[i];
+
         });
     }
 }
