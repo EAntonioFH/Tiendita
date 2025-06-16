@@ -9,7 +9,7 @@ body
 #Nombre
 {
     color: rgb(223, 26, 26);
-    background-color: #33ff61;
+    background-color: #ceb18f;
     text-align: center;
 }
 
@@ -25,25 +25,26 @@ body
 
 #Estanteria
 {
-    background-color: aqua;
+    background-color: #5e3506;
     width: 50%;
     height: 90%;
 }
 
 #Compra
 {
-    background-color: rebeccapurple;
+    background-color: #FFFFFF;
     height: 40%;
     width: 40%;
     display: flex;
     flex-direction: column;
+    border: 5px dashed #000000;
     position: relative;
     bottom: 10%;
 }
 
 #Total
 {
-    color: #FFFFFF;
+    color: #000000;
     font-family: Arial;
    align-self: last baseline;
    position: fixed;
@@ -67,12 +68,14 @@ body
     display: inline-block;
     width: 33%;
     height: 13%;
-    background-color: #3399ff;
+    background-color: #FFFFFF;
+    color: #000000;
 }
 
 .Estante
 {
-    background-color: #b233ff;
+    background-color: #351f06;
+    border: 5px solid #351f06;
     height: 16%;
     width: 80%;
     display: flex;

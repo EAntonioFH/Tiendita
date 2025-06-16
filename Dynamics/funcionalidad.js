@@ -27,7 +27,7 @@ for(let i in productos)
             {
                 compra = document.createElement("p");
                 compra.style.display = "inlineblock";
-                compra.style.color = "#FFFFFF";
+                compra.style.color = "#000000";
                 compra.id = nomProducto
                 compras.appendChild(compra);
                 
